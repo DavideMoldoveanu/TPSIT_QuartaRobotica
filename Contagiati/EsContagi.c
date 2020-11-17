@@ -96,7 +96,7 @@ int main(){
     if((fp=fopen("data.csv","r"))==NULL){
         printf("File non esistente");
     }else{
-        while(fgets(buffer,SIZE,fp)){ //leggo una volta tutto il file per sapere quante canzoni ci sono all'interno
+        while(fgets(buffer,SIZE,fp)){
             k++;
         }
         fclose(fp);
